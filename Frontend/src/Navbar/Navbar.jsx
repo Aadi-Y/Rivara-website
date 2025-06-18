@@ -16,11 +16,11 @@ function Navbar() {
             <section>
               <ul className="flex items-center gap-3">
                 <li className="text-[1.1rem] cursor-pointer hover:underline">
-                  <a href="#" >Men</a>
+                  <a href="#" >MEN</a>
                 </li>
 
                 <li className="text-[1.1rem] cursor-pointer hover:underline">
-                  <a href="#">Perfume</a>
+                  <a href="#">PERFUME</a>
                 </li>
               </ul>
             </section>

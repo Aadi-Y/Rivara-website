@@ -8,7 +8,7 @@ function MenSection(){
           <section className="mt-50 w-[100vw] bg-gray-200">
             <section className="w-[95%] m-auto">
               <section>
-                <h1 className="text-[1.5rem] mb-3">Men</h1>
+                <h1 className="text-[1.5rem] mb-3">MEN</h1>
               </section>
               <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div>
