@@ -1,67 +1,61 @@
-import shirt1 from "../assets/shirt1.png";
-import shirt2 from "../assets/shirt2.png";
-import shirt3 from "../assets/shirt3.png";
+import shirtItem from "../assets/shirtItem.jpg";
+import tshirtItem from "../assets/tshirtItem.jpg";
+import pantItem from "../assets/pantItem.jpg";
+import trouserItem from "../assets/trousersItem.jpg";
+import landingBanner from "../assets/landingBanner.jpg";
+import {Link} from "react-router-dom"
 
 function Landing() {
   return (
     <>
-      <section className="mt-50 w-[100vw] bg-gray-200">
-        <section className="w-[95%] m-auto">
+      <section className="h-auto w-[100vw] pb-100">
+        <section className="flex flex-col gap-40">
           <section>
-            <h1 className="text-[1.5rem] mb-3">Men</h1>
+            <div>
+              <img src={landingBanner} alt="" />
+            </div>
           </section>
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt2} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt3} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
 
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt2} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt3} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
+          <section className="w-[80%] m-auto grid grid-cols-2 gap-5">
+            <section>
+              <div>
+                <img src={shirtItem} alt="" className="h-100"/>
+              </div>
+              <div>
+                <p className="font-semibold text-[1.1rem]">SHIRTS</p>
+                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
+              </div>
+            </section>
 
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt2} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt3} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
+            <section>
+              <div>
+                <img src={tshirtItem} alt="" className="h-100"/>
+              </div>
+              <div>
+                <p className="font-semibold text-[1.1rem]">T-SHIRTS</p>
+                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
+              </div>
+            </section>
 
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt2} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt3} alt="" className="h-100 w-auto"/>
-            </div>
-            <div>
-                <img src={shirt1} alt="" className="h-100 w-auto"/>
-            </div>
+            <section>
+              <div>
+                <img src={pantItem} alt="" className="h-100 w-150" />
+              </div>
+              <div>
+                <p className="font-semibold text-[1.1rem]">PANTS</p>
+                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
+              </div>
+            </section>
+
+            <section>
+              <div>
+                <img src={trouserItem} alt="" className="h-100"/>
+              </div>
+              <div>
+                <p className="font-semibold text-[1.1rem]">TROUSERS</p>
+                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
+              </div>
+            </section>
           </section>
         </section>
       </section>

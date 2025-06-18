@@ -1,6 +1,6 @@
 import { IoMdSearch } from "react-icons/io";
-import { CiHeart } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
+import { FiHeart } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
 import { IoBagCheckOutline } from "react-icons/io5";
 // import { Link } from "react-router-dom";
 function Navbar() {
@@ -28,8 +28,8 @@ function Navbar() {
 
           <section className="flex items-center justify-between w-[15%]">
             <IoMdSearch className="text-2xl cursor-pointer" />
-            <CiUser className="text-2xl cursor-pointer" />
-            <CiHeart className="text-2xl cursor-pointer" />
+            <FiUser className="text-2xl cursor-pointer" />
+            <FiHeart className="text-2xl cursor-pointer" />
             <IoBagCheckOutline className="text-2xl cursor-pointer" />
           </section>
         </section>
