@@ -16,10 +16,10 @@ function Landing() {
             </div>
           </section>
 
-          <section className="w-[80%] m-auto grid grid-cols-2 gap-5">
+          <section className="w-[80%] m-auto grid grid-cols-2 gap-y-5 gap-x-0">
             <section>
               <div>
-                <img src={shirtItem} alt="" className="h-100"/>
+                <img src={shirtItem} alt="" className="h-100 w-200"/>
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">SHIRTS</p>
@@ -39,7 +39,7 @@ function Landing() {
 
             <section>
               <div>
-                <img src={pantItem} alt="" className="h-100 w-150" />
+                <img src={pantItem} alt="" className="h-100 w-160" />
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">PANTS</p>
