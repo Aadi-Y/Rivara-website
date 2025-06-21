@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IoLogoGoogle } from "react-icons/io";
 
 function Login() {
   const [loginData, setLoginData] = useState({
@@ -23,7 +24,7 @@ function Login() {
 
       <form
         onSubmit={handleSubmit}
-        className="px-5 py-7 rounded flex flex-col gap-5 w-[20%] bg-gray-100"
+        className="px-5 py-7 rounded flex flex-col gap-5 w-[23%] bg-gray-100"
       >
         <div className="flex flex-col gap-3">
           <input
@@ -50,6 +51,16 @@ function Login() {
         >
           Login
         </button>
+
+        <div className="text-center py-1">
+          <p>OR</p>
+        </div>
+
+        <div className="pb-2">
+          <button className="flex items-center justify-center gap-2 border py-2 w-full rounded bg-gray-300 border-none text-gray-500 cursor-pointer hover:border-black hover:bg-gray-200">
+            <IoLogoGoogle className="text-xl" /> Continue with Google
+          </button>
+        </div>
 
         <p className="text-center">
           Don't have an account?{" "}
