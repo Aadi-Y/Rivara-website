@@ -16,10 +16,10 @@ function Landing() {
             </div>
           </section>
 
-          <section className="w-[80%] m-auto grid grid-cols-2 gap-y-5 gap-x-0">
+          <section className="w-[100%] lg:w-[80%] m-auto grid md:grid-cols-2 gap-y-5 gap-x-0">
             <section>
               <div>
-                <img src={shirtItem} alt="" className="h-100 w-200"/>
+                <img src={shirtItem} alt="" className=" w-full md:h-100 md:w-200"/>
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">SHIRTS</p>
@@ -29,7 +29,7 @@ function Landing() {
 
             <section>
               <div>
-                <img src={tshirtItem} alt="" className="h-100"/>
+                <img src={tshirtItem} alt="" className="w-full md:h-100 md:w-200"/>
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">T-SHIRTS</p>
@@ -39,7 +39,7 @@ function Landing() {
 
             <section>
               <div>
-                <img src={pantItem} alt="" className="h-100 w-160" />
+                <img src={pantItem} alt="" className="w-full md:h-100 md:w-200" />
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">PANTS</p>
@@ -49,7 +49,7 @@ function Landing() {
 
             <section>
               <div>
-                <img src={trouserItem} alt="" className="h-100"/>
+                <img src={trouserItem} alt="" className="w-full md:h-100 md:w-200"/>
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">TROUSERS</p>

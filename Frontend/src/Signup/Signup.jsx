@@ -25,7 +25,7 @@ function Signup() {
 
       <form
         onSubmit={handleSubmit}
-        className="px-5 py-7 rounded flex flex-col gap-5 w-[23%] bg-gray-100"
+        className="px-5 py-7 rounded flex flex-col gap-5 sm:w-90 w-80 bg-gray-100"
       >
         <div className="flex flex-col gap-3">
           <input
