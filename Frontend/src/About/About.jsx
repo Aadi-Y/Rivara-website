@@ -1,7 +1,14 @@
 import shirt1 from "../assets/shirt1.png";
 // import { FaRupeeSign } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+
+  const navigate = useNavigate();
+  
+  function handleCard(){
+    navigate("/card")
+  }
   return (
     <>
       <section className="h-[100vh] w-[100vw] mt-30">
@@ -92,7 +99,7 @@ function About() {
             </div>
 
             <div className="flex flex-col w-[50%] gap-2">
-              <button className="border p-4 bg-black text-white cursor-pointer hover:text-black hover:bg-transparent rounded transition-all duration-200">ADD</button>
+              <button className="border p-4 bg-black text-white cursor-pointer hover:text-black hover:bg-transparent rounded transition-all duration-200" onClick={handleCard}>ADD</button>
               <button className="border p-4 bg-black text-white cursor-pointer hover:text-black hover:bg-transparent rounded transition-all duration-200">BUY</button>
             </div>
           </section>

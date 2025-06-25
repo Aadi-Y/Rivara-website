@@ -10,6 +10,7 @@ function MenSection(){
     function handleNavigation(){
         navigate("/about")
     }
+    
     return (
         <>
           <section className="mt-50 w-[100vw] bg-gray-200">

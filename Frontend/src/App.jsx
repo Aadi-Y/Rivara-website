@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Login from "./Login/Login"
 import Signup from "./Signup/Signup"
 import About from "./About/About"
+import Card from "./Cards/Card"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Signup/>}></Route>
           <Route path="/about" element={<About/>}></Route>
+          <Route path="/card" element={<Card/>}></Route>
         </Routes>
       </Router>
     </>
