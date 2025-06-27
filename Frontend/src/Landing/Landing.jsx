@@ -4,8 +4,29 @@ import pantItem from "../assets/pantItem.jpg";
 import trouserItem from "../assets/trousersItem.jpg";
 import landingBanner from "../assets/landingBanner.jpg";
 import {Link} from "react-router-dom"
+import { useEffect, useState } from "react";
 
 function Landing() {
+  const [landingItem,setLandingItem] = useState();
+
+  useEffect(()=>{
+
+    //API Call
+    function handleLandingAPI(){
+      try{
+
+        const response = axios.get("");
+
+        if(response && response.data){
+          setLandingItem(response.data);
+        }
+      }catch(error){
+        console.log(error);
+      }
+    }
+
+    handleLandingAPI
+  },[])
   return (
     <>
       <section className="h-auto w-[100vw] pb-100">
@@ -13,6 +34,7 @@ function Landing() {
           <section>
             <div>
               <img src={landingBanner} alt="" />
+              {/* <img src={landingItem.landingBanner} alt="" /> */}
             </div>
           </section>
 
@@ -20,6 +42,7 @@ function Landing() {
             <section>
               <div>
                 <img src={shirtItem} alt="" className=" w-full md:h-100 md:w-200"/>
+                {/* <img src={landingItem.shirtItem} alt="" className=" w-full md:h-100 md:w-200"/> */}
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">SHIRTS</p>
@@ -30,6 +53,7 @@ function Landing() {
             <section>
               <div>
                 <img src={tshirtItem} alt="" className="w-full md:h-100 md:w-200"/>
+                {/* <img src={landingItem.shirtItem} alt="" className="w-full md:h-100 md:w-200"/> */}
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">T-SHIRTS</p>
@@ -40,6 +64,7 @@ function Landing() {
             <section>
               <div>
                 <img src={pantItem} alt="" className="w-full md:h-100 md:w-200" />
+                {/* <img src={landingItem.pantItem} alt="" className="w-full md:h-100 md:w-200" /> */}
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">PANTS</p>
@@ -50,6 +75,7 @@ function Landing() {
             <section>
               <div>
                 <img src={trouserItem} alt="" className="w-full md:h-100 md:w-200"/>
+                {/* <img src={landingItem.trouserItem} alt="" className="w-full md:h-100 md:w-200"/> */}
               </div>
               <div>
                 <p className="font-semibold text-[1.1rem]">TROUSERS</p>
