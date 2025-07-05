@@ -1,0 +1,74 @@
+[
+  {
+    "productId": "P001",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "White Formal Shirt",
+    "productPrice": 1199,
+    "description": "A crisp white formal shirt perfect for office wear and special occasions.",
+    "availableSizes": ["S", "M", "L", "XL"],
+    "colorVariants": ["/src/assets/shirt1.png", "/src/assets/shirt2.png"]
+  },
+  {
+    "productId": "P002",
+    "productImage": "/src/assets/shirt2.png",
+    "productName": "Denim Jean Shirt",
+    "productPrice": 1499,
+    "description": "Stylish and rugged denim shirt, ideal for a smart casual look.",
+    "availableSizes": ["M", "L", "XL"],
+    "colorVariants": ["/src/assets/shirt2.png", "/src/assets/shirt3.png"]
+  },
+  {
+    "productId": "P003",
+    "productImage": "/src/assets/shirt3.png",
+    "productName": "Sky Blue Casual Shirt",
+    "productPrice": 1349,
+    "description": "A comfortable casual shirt in a soothing sky blue tone.",
+    "availableSizes": ["S", "M", "L", "XL", "XXL"],
+    "colorVariants": ["/src/assets/shirt3.png"]
+  },
+  {
+    "productId": "P004",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "Classic White Shirt",
+    "productPrice": 1249,
+    "description": "A timeless classic white shirt for every wardrobe.",
+    "availableSizes": ["XS", "S", "M", "L", "XL"],
+    "colorVariants": ["/src/assets/shirt1.png", "/src/assets/shirt2.png", "/src/assets/shirt3.png"]
+  },
+  {
+    "productId": "P005",
+    "productImage": "/src/assets/shirt2.png",
+    "productName": "Indigo Denim Shirt",
+    "productPrice": 1549,
+    "description": "Durable indigo denim with a modern fit and soft finish.",
+    "availableSizes": ["M", "L"],
+    "colorVariants": ["/src/assets/shirt2.png"]
+  },
+  {
+    "productId": "P006",
+    "productImage": "/src/assets/shirt3.png",
+    "productName": "Blue Cotton Shirt",
+    "productPrice": 1399,
+    "description": "Lightweight and breathable blue cotton shirt ideal for summer.",
+    "availableSizes": ["S", "M", "L", "XL", "XXL"],
+    "colorVariants": ["/src/assets/shirt3.png", "/src/assets/shirt1.png"]
+  },
+  {
+    "productId": "P007",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "Slim Fit White Shirt",
+    "productPrice": 1199,
+    "description": "A modern slim-fit white shirt tailored for a sharp look.",
+    "availableSizes": ["S", "M", "L"],
+    "colorVariants": ["/src/assets/shirt1.png"]
+  },
+  {
+    "productId": "P008",
+    "productImage": "/src/assets/shirt2.png",
+    "productName": "Faded Jean Shirt",
+    "productPrice": 1450,
+    "description": "Comfortable and rugged faded denim shirt with vintage charm.",
+    "availableSizes": ["M", "L", "XL"],
+    "colorVariants": ["/src/assets/shirt2.png", "/src/assets/shirt3.png"]
+  }
+]

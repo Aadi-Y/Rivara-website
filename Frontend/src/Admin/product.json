@@ -1,0 +1,50 @@
+[
+  {
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "White Shirt",
+    "productPrice": 1240,
+    "productColor": [
+      "/src/assets/shirt1.png",
+      "/src/assets/shirt2.png",
+      "/src/assets/shirt3.png"
+    ],
+    "productSize": "S,M,L,XL,XLL",
+    "productDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore odit fugiat sit assumenda, quae pariatur explicabo ea placeat maxime voluptatibus qui reprehenderit consequuntur exercitationem dolorem voluptates eius facere dolores."
+  },
+  {
+    "productImage": "/src/assets/shirt2.png",
+    "productName": "Jean Shirt",
+    "productPrice": 1240,
+    "productColor": [
+      "/src/assets/shirt1.png",
+      "/src/assets/shirt2.png",
+      "/src/assets/shirt3.png"
+    ],
+    "productSize": "S,M,L,XL,XLL",
+    "productDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore odit fugiat sit assumenda, quae pariatur explicabo ea placeat maxime voluptatibus qui reprehenderit consequuntur exercitationem dolorem voluptates eius facere dolores."
+  },
+  {
+    "productImage": "/src/assets/shirt3.png",
+    "productName": "Blue Shirt",
+    "productPrice": 1240,
+    "productColor": [
+      "/src/assets/shirt1.png",
+      "/src/assets/shirt2.png",
+      "/src/assets/shirt3.png"
+    ],
+    "productSize": "S,M,L,XL,XLL",
+    "productDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore odit fugiat sit assumenda, quae pariatur explicabo ea placeat maxime voluptatibus qui reprehenderit consequuntur exercitationem dolorem voluptates eius facere dolores."
+  },
+  {
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "White Shirt",
+    "productPrice": 1240,
+    "productColor": [
+      "/src/assets/shirt1.png",
+      "/src/assets/shirt2.png",
+      "/src/assets/shirt3.png"
+    ],
+    "productSize": "S,M,L,XL,XLL",
+    "productDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore odit fugiat sit assumenda, quae pariatur explicabo ea placeat maxime voluptatibus qui reprehenderit consequuntur exercitationem dolorem voluptates eius facere dolores."
+  }
+]

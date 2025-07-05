@@ -1,27 +1,42 @@
 [
   {
-    "productImage": "../assets/shirt1.png",
-    "productName": "SHIRT",
-    "productPrice": 1249
+    "productId": "P001",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "SHIRT 1",
+    "productPrice": 1249,
+    "selectedSize": "M",
+    "selectedColor": "/src/assets/shirt1.png"
   },
   {
-    "productImage": "../assets/shirt1.png",
-    "productName": "SHIRT",
-    "productPrice": 1249
+    "productId": "P002",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "SHIRT 2",
+    "productPrice": 1249,
+    "selectedSize": "L",
+    "selectedColor": "/src/assets/shirt1.png"
   },
   {
-    "productImage": "../assets/shirt1.png",
-    "productName": "SHIRT",
-    "productPrice": 1249
+    "productId": "P003",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "SHIRT 3",
+    "productPrice": 1249,
+    "selectedSize": "S",
+    "selectedColor": "/src/assets/shirt1.png"
   },
   {
-    "productImage": "../assets/shirt1.png",
-    "productName": "SHIRT",
-    "productPrice": 1249
+    "productId": "P004",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "SHIRT 4",
+    "productPrice": 1249,
+    "selectedSize": "XL",
+    "selectedColor": "/src/assets/shirt1.png"
   },
   {
-    "productImage": "../assets/shirt1.png",
-    "productName": "SHIRT",
-    "productPrice": 1249
+    "productId": "P005",
+    "productImage": "/src/assets/shirt1.png",
+    "productName": "SHIRT 5",
+    "productPrice": 1249,
+    "selectedSize": "XXL",
+    "selectedColor": "/src/assets/shirt1.png"
   }
 ]

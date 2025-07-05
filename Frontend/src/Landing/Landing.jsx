@@ -1,91 +1,104 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios"; // ✅ Add this import for real API use
+
+// Fallback Local Assets
 import shirtItem from "../assets/shirtItem.jpg";
 import tshirtItem from "../assets/tshirtItem.jpg";
 import pantItem from "../assets/pantItem.jpg";
 import trouserItem from "../assets/trousersItem.jpg";
 import landingBanner from "../assets/landingBanner.jpg";
-import {Link} from "react-router-dom"
-import { useEffect, useState } from "react";
 
 function Landing() {
-  const [landingItem,setLandingItem] = useState();
+  const [landingItem, setLandingItem] = useState(null);
 
-  useEffect(()=>{
+  useEffect(() => {
+    // Simulated API Call
+    async function handleLandingAPI() {
+      try {
+        // Replace with real API endpoint when ready
+        const response = await axios.get("/api/landing-data");
 
-    //API Call
-    function handleLandingAPI(){
-      try{
-
-        const response = axios.get("");
-
-        if(response && response.data){
+        if (response && response.data) {
           setLandingItem(response.data);
         }
-      }catch(error){
-        console.log(error);
+      } catch (error) {
+        console.log("Landing API error:", error);
+        // Optional: set fallback or toast
       }
     }
 
-    handleLandingAPI
-  },[])
+    handleLandingAPI();
+  }, []);
+
   return (
-    <>
-      <section className="h-auto w-[100vw] pb-100">
-        <section className="flex flex-col gap-40">
-          <section>
-            <div>
-              <img src={landingBanner} alt="" />
-              {/* <img src={landingItem.landingBanner} alt="" /> */}
-            </div>
+    <section className="min-h-screen w-full pb-20">
+      <section className="flex flex-col gap-16">
+        {/* Banner */}
+        <section>
+          <img
+            src={landingItem?.landingBanner || landingBanner}
+            alt="Landing Banner"
+            className="w-full h-auto object-cover"
+          />
+        </section>
+
+        {/* Product Category Grid */}
+        <section className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 px-4">
+          {/* Shirts */}
+          <section className="flex flex-col">
+            <img
+              src={landingItem?.shirtItem || shirtItem}
+              alt="Shirts"
+              className="w-full h-64 object-cover rounded shadow"
+            />
+            <p className="font-semibold text-lg">SHIRTS</p>
+            <Link to="/shirt" className="text-gray-600 hover:underline">
+              EXPLORE
+            </Link>
           </section>
 
-          <section className="w-[100%] lg:w-[80%] m-auto grid md:grid-cols-2 gap-y-5 gap-x-0">
-            <section>
-              <div>
-                <img src={shirtItem} alt="" className=" w-full md:h-100 md:w-200"/>
-                {/* <img src={landingItem.shirtItem} alt="" className=" w-full md:h-100 md:w-200"/> */}
-              </div>
-              <div>
-                <p className="font-semibold text-[1.1rem]">SHIRTS</p>
-                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
-              </div>
-            </section>
+          {/* T-Shirts */}
+          <section className="flex flex-col">
+            <img
+              src={landingItem?.tshirtItem || tshirtItem}
+              alt="T-Shirts"
+              className="w-full h-64 object-cover rounded shadow"
+            />
+            <p className="font-semibold text-lg">T-SHIRTS</p>
+            <Link to="/tshirt" className="text-gray-600 hover:underline">
+              EXPLORE
+            </Link>
+          </section>
 
-            <section>
-              <div>
-                <img src={tshirtItem} alt="" className="w-full md:h-100 md:w-200"/>
-                {/* <img src={landingItem.shirtItem} alt="" className="w-full md:h-100 md:w-200"/> */}
-              </div>
-              <div>
-                <p className="font-semibold text-[1.1rem]">T-SHIRTS</p>
-                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
-              </div>
-            </section>
+          {/* Pants */}
+          <section className="flex flex-col">
+            <img
+              src={landingItem?.pantItem || pantItem}
+              alt="Pants"
+              className="w-full h-64 object-cover rounded shadow"
+            />
+            <p className="font-semibold text-lg">PANTS</p>
+            <Link to="/pant" className="text-gray-600 hover:underline">
+              EXPLORE
+            </Link>
+          </section>
 
-            <section>
-              <div>
-                <img src={pantItem} alt="" className="w-full md:h-100 md:w-200" />
-                {/* <img src={landingItem.pantItem} alt="" className="w-full md:h-100 md:w-200" /> */}
-              </div>
-              <div>
-                <p className="font-semibold text-[1.1rem]">PANTS</p>
-                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
-              </div>
-            </section>
-
-            <section>
-              <div>
-                <img src={trouserItem} alt="" className="w-full md:h-100 md:w-200"/>
-                {/* <img src={landingItem.trouserItem} alt="" className="w-full md:h-100 md:w-200"/> */}
-              </div>
-              <div>
-                <p className="font-semibold text-[1.1rem]">TROUSERS</p>
-                <Link to="/mens" className="text-gray-700">EXPLORE</Link>
-              </div>
-            </section>
+          {/* Trousers */}
+          <section className="flex flex-col">
+            <img
+              src={landingItem?.trouserItem || trouserItem}
+              alt="Trousers"
+              className="w-full h-64 object-cover rounded shadow"
+            />
+            <p className="font-semibold text-lg">TROUSERS</p>
+            <Link to="/trouser" className="text-gray-600 hover:underline">
+              EXPLORE
+            </Link>
           </section>
         </section>
       </section>
-    </>
+    </section>
   );
 }
 
